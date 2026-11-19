@@ -1,59 +1,58 @@
 #Le_The_Vinh
 #Giai pt bac 2___Solve quadratic equations 
-#Dau vao cua a,b,c
+#Input of a,b,c
 while True:
 	while True:
 		try:
-			a=float(input("Nhap so a: "))
+			a=float(input("Enter number a: "))
 			break
 		except ValueError:
-			print("Ban khong duoc nhap ki tu ngoai so!")
+			print("You are not allowed to enter any characters other than numbers.")
 	while True:
 			try:
-				b=float(input("Nhap so b: "))
+				b=float(input("Enter number b: "))
 				break
 			except ValueError:
-				print("Ban khong duoc nhap ki tu ngoai so!")
+				print("You are not allowed to enter any characters other than numbers.")
 	while True:
 			try:
-				c=float(input("Nhap so c: "))
+				c=float(input("Enter number c: "))
 				break
 			except ValueError:
-				print("Ban khong duoc nhap ki tu ngoai so!")
-#Tinh delta
+				print("You are not allowed to enter any characters other than numbers.")
+#Caculate delta
 	d=b**2-4*a*c
-#Dat dieu kien
+#Set conditions
 	if a==0 and b==0 and c==0:
-			print("Pt co vo so nghiem!")
+			print("The equation has infinitely many solutions.")
 	elif a==0 and b==0:
-			print("Pt vo nghiem!")
+			print("The equation has no solution.")
+	elif a==0 and c==0:
+		ans=c/b
+		print("The equation has one solution.")
+		print("x=",ans)
 	elif a==0:
-			e0=-c/b
-			print("Pt co 1 nghiem!")
-			print("x=",e0)
+			ans0=-c/b
+			print("The equation has one solution.")
+			print("x=",ans0)
 	elif d>0:
-			nghiem1=(-b+d**0.5)/(2*a)
-			nghiem2=(-b-d**0.5)/(2*a)
-			print("Pt co 2 nghiem pb!")
-			print("x1=",nghiem1)
-			print("x2=",nghiem2)
+			ans1=(-b+d**0.5)/(2*a)
+			ans2=(-b-d**0.5)/(2*a)
+			print("The equation has two distinct solutions.")
+			print("x1=",ans1)
+			print("x2=",ans2)
 	elif d==0:
-			e1=(-b)/(2*a)
-			print("Pt co nghiem kep!")
-			print("x1= x2=",e1)
-	elif d<0:
-			print("Pt vo nghiem!")
-	try:
-			again=input(" Chon 1 de dung lai, chon bat ki de dung tiep: ")
-			if again=="1":
-				break
-			else:
-				continue
-	except:
-		print("")
+			ans3=(-b)/(2*a)
+			print("The equation has a double root.")
+			print("x1= x2=",ans3)
+	else:
+			print("The equation has no solution.")
+	again=input("Select 1 to stop, select any to continue: ")
+	if again=="1":
+		break
 #End
 #Thanks for watching my files!
 #Ltvih
 #2012
-			
+		
 			
