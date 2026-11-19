@@ -1,5 +1,5 @@
 #Le_The_Vinh
-#Giai pt bac 2___Solve quadratic equations
+#Giai pt bac 2___Solve quadratic equations 
 #Dau vao cua a,b,c
 while True:
 	while True:
@@ -44,15 +44,16 @@ while True:
 	elif d<0:
 			print("Pt vo nghiem!")
 	try:
-			again=float(input(" Chon 1 de dung tiep, chon so bat ki de dung lai: "))
-			if again==1:
-				True
-			else:
+			again=input(" Chon 1 de dung lai, chon bat ki de dung tiep: ")
+			if again=="1":
 				break
+			else:
+				continue
 	except:
-		print("Nhap 1 so!")
+		print("")
 #End
 #Thanks for watching my files!
 #Ltvih
 #2012
+			
 			
