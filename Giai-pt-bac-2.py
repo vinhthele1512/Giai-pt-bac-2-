@@ -1,5 +1,5 @@
 #Le_The_Vinh
-#Giai pt bac 2
+#Giai pt bac 2___Solve quadratic equations
 #Dau vao cua a,b,c
 while True:
 	while True:
