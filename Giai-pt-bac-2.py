@@ -31,6 +31,9 @@ while True:
 		ans=c/b
 		print("The equation has one solution.")
 		print("x=",ans)
+	elif b==0 and c==0:
+		print("The equation has one solution.")
+		print("x= 0")
 	elif a==0:
 			ans0=-c/b
 			print("The equation has one solution.")
@@ -55,4 +58,3 @@ while True:
 #Ltvih
 #2012
 		
-			
