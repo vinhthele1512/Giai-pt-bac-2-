@@ -1,22 +1,33 @@
 #Le_The_Vinh
 #Giai pt bac 2___Solve quadratic equations 
-#Input of a,b,c
+#Input of a
 while True:
 	while True:
 		try:
 			a=float(input("Enter number a: "))
+			while a!=a or a==float("inf") or a==float("-inf"):
+				print("Please choose a number outside nan, inf and -inf.")
+				a=float(input("Enter number a: "))
 			break
 		except ValueError:
 			print("You are not allowed to enter any characters other than numbers.")
+#Input of b
 	while True:
 			try:
 				b=float(input("Enter number b: "))
+				while b!=b or b==float("inf") or b==float("-inf") :
+					print("Please choose a number outside nan, inf and -inf.")
+					b=float(input("Enter number b: "))
 				break
 			except ValueError:
 				print("You are not allowed to enter any characters other than numbers.")
+#Input of c
 	while True:
 			try:
 				c=float(input("Enter number c: "))
+				while c!=c or c==float("inf") or c==float("-inf"):
+					print("Please choose a number outside nan, inf and -inf.")
+					c=float(input("Enter number c: "))
 				break
 			except ValueError:
 				print("You are not allowed to enter any characters other than numbers.")
@@ -27,11 +38,7 @@ while True:
 			print("The equation has infinitely many solutions.")
 	elif a==0 and b==0:
 			print("The equation has no solution.")
-	elif a==0 and c==0:
-		ans=c/b
-		print("The equation has one solution.")
-		print("x=",ans)
-	elif b==0 and c==0:
+	elif a==0 and c==0 or b==0 and c==0:
 		print("The equation has one solution.")
 		print("x= 0")
 	elif a==0:
