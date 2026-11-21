@@ -1,5 +1,4 @@
 # Giai-pt-bac-2-
-Giải phương trình bậc 2 bằng python.
 Solve quadratic equations using Python.
 # Quadratic Equation Solver | Giải Phương Trình Bậc 2 🧮
 
